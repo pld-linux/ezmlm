@@ -3,15 +3,15 @@ Summary(pl):	Zarz±dca list dyskusyjnych dla qmaila
 Name:		ezmlm
 Version:	0.53
 Release:	2
+License:	Check with djb@koobera.math.uic.edu
 Group:		Applications/System
 Group(de):	Applikationen/System
 Group(pl):	Aplikacje/System
-License:	Check with djb@koobera.math.uic.edu
 Source0:	http://cr.yp.to/software/%{name}-%{version}.tar.gz
 Patch0:		%{name}.patch
 URL:		http://www.qmail.org/
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Requires:	qmail
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Qmail Mailing List Manager.
@@ -25,6 +25,12 @@ Qmailowy mened¿er list dyskusyjnych.
 echo "/usr/lib/ezmlm" > conf-bin
 
 %build
+cat > auto-ccld.sh <<EOF
+#!/bin/sh
+CC='%{__cc} %{rpmcflags}'
+LD='%{__cc} %{rpmldflags}'
+EOF
+
 %{__make}
 
 %install
