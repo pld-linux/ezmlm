@@ -1,9 +1,9 @@
 Summary:	Qmail Mailing List Manager
 Name:		ezmlm
-Version:	0.52
+Version:	0.53
 Release:	2
 Group:		Utilities/System
-Source:		ftp://koobera.math.uic.edu/pub/software/%{name}-%{version}.tar.gz
+Source:		http://cr.yp.to/software/%{name}-%{version}.tar.gz
 Patch:		ezmlm.patch
 URL:		http://www.qmail.org/
 Copyright:	Check with djb@koobera.math.uic.edu
