@@ -13,6 +13,9 @@ Requires:	qmail
 %description
 Qmail Mailing List Manager
 
+%description -l pl
+Qmailowy mened¿er list dyskusyjnych.
+
 %prep
 %setup -q
 %patch
