@@ -23,7 +23,7 @@ Qmailowy mened¿er list dyskusyjnych.
 echo "/usr/lib/ezmlm" > conf-bin
 
 %build
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
