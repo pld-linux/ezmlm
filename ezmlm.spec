@@ -1,4 +1,4 @@
-Summary:	Qmail Mailing List Manager
+Summary:	Qmail mailing list manager
 Summary(pl):	Zarz±dca list dyskusyjnych dla qmaila
 Name:		ezmlm
 Version:	0.53
@@ -12,10 +12,10 @@ Requires:	qmail
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Qmail Mailing List Manager.
+Qmail mailing list manager.
 
 %description -l pl
-Qmailowy mened¿er list dyskusyjnych.
+Qmailowy zarz±dca list dyskusyjnych.
 
 %prep
 %setup -q
@@ -41,14 +41,12 @@ install ezmlm-list ezmlm-make ezmlm-sub ezmlm-unsub $RPM_BUILD_ROOT%{_bindir}
 install ezmlm-manage ezmlm-reject ezmlm-return ezmlm-send ezmlm-warn \
 	ezmlm-weed	$RPM_BUILD_ROOT%{_libdir}/ezmlm
 
-gzip -9nf BLURB CHANGES README THANKS TODO VERSION
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc {BLURB,CHANGES,README,THANKS,TODO,VERSION}.gz
+%doc BLURB CHANGES README THANKS TODO VERSION
 %attr(755,root,root) %{_bindir}/*
 %dir %{_libdir}/ezmlm
 %attr(755,root,root) %{_libdir}/ezmlm/*
