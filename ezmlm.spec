@@ -5,8 +5,6 @@ Version:	0.53
 Release:	2
 License:	Check with djb@koobera.math.uic.edu
 Group:		Applications/System
-Group(de):	Applikationen/System
-Group(pl):	Aplikacje/System
 Source0:	http://cr.yp.to/software/%{name}-%{version}.tar.gz
 Patch0:		%{name}.patch
 URL:		http://www.qmail.org/
