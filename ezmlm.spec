@@ -3,8 +3,9 @@ Name:		ezmlm
 Version:	0.53
 Release:	2
 Group:		Utilities/System
-Source:		http://cr.yp.to/software/%{name}-%{version}.tar.gz
-Patch:		ezmlm.patch
+Group(pl):	Narzêdzia/System
+Source0:	http://cr.yp.to/software/%{name}-%{version}.tar.gz
+Patch0:		ezmlm.patch
 URL:		http://www.qmail.org/
 Copyright:	Check with djb@koobera.math.uic.edu
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
