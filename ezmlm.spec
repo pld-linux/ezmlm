@@ -7,7 +7,7 @@ Source:		ftp://koobera.math.uic.edu/pub/software/%{name}-%{version}.tar.gz
 Patch:		ezmlm.patch
 URL:		http://www.qmail.org/
 Copyright:	Check with djb@koobera.math.uic.edu
-Buildroot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Requires:	qmail
 
 %description
