@@ -20,7 +20,7 @@ Qmailowy zarz±dca list dyskusyjnych.
 %prep
 %setup -q
 %patch
-echo "/usr/lib/ezmlm" > conf-bin
+echo "%{_libdir}/ezmlm" > conf-bin
 
 %build
 cat > auto-ccld.sh <<EOF
