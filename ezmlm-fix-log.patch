@@ -1,0 +1,20 @@
+--- ezmlm-manage.c.orig	Mon Jun 30 05:11:54 1997
++++ ezmlm-manage.c	Mon Nov 24 16:54:06 2003
+@@ -22,6 +22,7 @@
+ #include "fmt.h"
+ #include "subscribe.h"
+ #include "cookie.h"
++#include "log.h"
+ 
+ #define FATAL "ezmlm-manage: fatal: "
+ void die_usage() { strerr_die1x(100,"ezmlm-manage: usage: ezmlm-manage dir"); }
+--- ezmlm-return.c.orig	Mon Nov 24 16:56:41 2003
++++ ezmlm-return.c	Mon Nov 24 16:56:11 2003
+@@ -17,6 +17,7 @@
+ #include "cookie.h"
+ #include "subscribe.h"
+ #include "issub.h"
++#include "log.h"
+ 
+ #define FATAL "ezmlm-return: fatal: "
+ void die_usage() { strerr_die1x(100,"ezmlm-return: usage: ezmlm-return dir"); }
