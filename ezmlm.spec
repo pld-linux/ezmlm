@@ -6,6 +6,7 @@ Release:	2
 License:	Check with djb@koobera.math.uic.edu
 Group:		Applications/System
 Source0:	http://cr.yp.to/software/%{name}-%{version}.tar.gz
+# Source0-md5:	108c632caaa8cdbfd3041e6c449191b2
 URL:		http://www.qmail.org/
 Requires:	qmail
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
