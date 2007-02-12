@@ -1,5 +1,5 @@
 Summary:	Qmail mailing list manager
-Summary(pl):	Zarz±dca list dyskusyjnych dla qmaila
+Summary(pl.UTF-8):   ZarzÄ…dca list dyskusyjnych dla qmaila
 Name:		ezmlm
 Version:	0.53
 Release:	3
@@ -16,8 +16,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Qmail mailing list manager.
 
-%description -l pl
-Qmailowy zarz±dca list dyskusyjnych.
+%description -l pl.UTF-8
+Qmailowy zarzÄ…dca list dyskusyjnych.
 
 %prep
 %setup -q
