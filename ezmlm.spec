@@ -1,5 +1,5 @@
 Summary:	Qmail mailing list manager
-Summary(pl.UTF-8):   Zarządca list dyskusyjnych dla qmaila
+Summary(pl.UTF-8):	Zarządca list dyskusyjnych dla qmaila
 Name:		ezmlm
 Version:	0.53
 Release:	3
