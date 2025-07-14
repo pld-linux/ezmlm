@@ -21,8 +21,8 @@ Qmailowy zarządca list dyskusyjnych.
 
 %prep
 %setup -q
-%patch0
-%patch1
+%patch -P0
+%patch -P1
 echo "%{_libdir}/ezmlm" > conf-bin
 
 %build
